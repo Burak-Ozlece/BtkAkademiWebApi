@@ -10,9 +10,7 @@ namespace Repository.EfCore
 {
     public class BookRepository : RepositoryBase<Book>, IBookRepository
     {
-        public BookRepository(RepositoryContext context) : base(context)
-        {
-        }
+        public BookRepository(RepositoryContext context) : base(context) { }
 
         public void CreateOneBook(Book book) => Create(book);
 
